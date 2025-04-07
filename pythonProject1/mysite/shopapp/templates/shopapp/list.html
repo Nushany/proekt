@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://shkola28izhevsk-r18.gosweb.gosuslugi.ru/netcat_files/45/253/png_clipart_school_bell_bellflowers_1_september_bell_leaf_backpack.png" type="image/x-icon">
+  <title>Тренажеры</title>
+</head>
+
+<body>
+<ul class="nav nav-pills sticky-top bg-white nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">
+      <span style="font-weight: bold;">Главная</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/list/"><span style="font-weight: bold;">Весь список обучалок</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/profile/">
+      <span style="font-weight: bold;">Проведенные опыты</span>
+    </a>
+  </li>
+
+</ul>
+
+<!--Main Navigation-->
+<header>
+  <style>
+    /* Carousel styling */
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100vh;
+    }
+
+    .carousel-item:nth-child(1) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(2) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(3) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #introCarousel {
+        margin-top: -58.59px;
+      }
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+  </style>
+
+  <!-- Navbar -->
+
+
+        <ul class="navbar-nav list-inline">
+          <!-- Icons -->
+          <li class="">
+            <a
+               class="nav-link"
+               href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+               rel="nofollow"
+               target="_blank"
+               >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="">
+            <a
+               class="nav-link"
+               href="https://www.facebook.com/mdbootstrap"
+               rel="nofollow"
+               target="_blank"
+               >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+               class="nav-link"
+               href="https://twitter.com/MDBootstrap"
+               rel="nofollow"
+               target="_blank"
+               >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+               class="nav-link"
+               href="https://github.com/mdbootstrap/mdb-ui-kit"
+               rel="nofollow"
+               target="_blank"
+               >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Carousel wrapper -->
+  <div
+       id="introCarousel"
+       class="carousel slide carousel-fade shadow-2-strong"
+       data-mdb-ride="carousel"
+       >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li
+          data-mdb-target="#introCarousel"
+          data-mdb-slide-to="0"
+          class="active"
+          ></li>
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+    </ol>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <video
+               style="min-width: 100%; min-height: 100%"
+               playsinline
+               autoplay
+               muted
+               loop
+               >
+          <source
+                  class="h-100"
+                  src="https://mdbootstrap.com/img/video/Lines.mp4"
+                  type="video/mp4"
+                  />
+        </video>
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div
+               class="d-flex justify-content-center align-items-center h-100"
+               >
+            <div class="text-white text-center">
+              <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+              <h5 class="mb-4">
+                Best & free guide of responsive web design
+              </h5>
+              <a
+                 class="btn btn-outline-light btn-lg m-2"
+                 href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                 role="button"
+                 rel="nofollow"
+                 target="_blank"
+                 >Start tutorial</a
+                >
+              <a
+                 class="btn btn-outline-light btn-lg m-2"
+                 href="https://mdbootstrap.com/docs/standard/"
+                 target="_blank"
+                 role="button"
+                 >Download MDB UI KIT</a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <video
+               style="min-width: 100%; min-height: 100%"
+               playsinline
+               autoplay
+               muted
+               loop
+               >
+          <source
+                  class="h-100"
+                  src="https://mdbootstrap.com/img/video/forest.mp4"
+                  type="video/mp4"
+                  />
+        </video>
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div
+               class="d-flex justify-content-center align-items-center h-100"
+               >
+            <div class="text-white text-center">
+              <h2>You can place here any content</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <video
+               style="min-width: 100%; min-height: 100%"
+               playsinline
+               autoplay
+               muted
+               loop
+               >
+          <source
+                  class="h-100"
+                  src="https://mdbootstrap.com/img/video/Tropical.mp4"
+                  type="video/mp4"
+                  />
+        </video>
+        <div
+             class="mask"
+             style="
+                    background: linear-gradient(
+                    45deg,
+                    rgba(29, 236, 197, 0.7),
+                    rgba(91, 14, 214, 0.7) 100%
+                    );
+                    "
+             >
+          <div
+               class="d-flex justify-content-center align-items-center h-100"
+               >
+            <div class="text-white text-center">
+              <h2>And cover it with any mask</h2>
+              <a
+                 class="btn btn-outline-light btn-lg m-2"
+                 href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
+                 target="_blank"
+                 role="button"
+                 >Learn about masks</a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+ 
+  <!-- Carousel wrapper -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5">
+  <div class="container">
+    <!--Section: Content-->
+    <section>
+      <div class="row">
+        <div class="col-md-6 gx-5 mb-4">
+          <div
+               class="bg-image hover-overlay ripple shadow-2-strong"
+               data-mdb-ripple-color="light"
+               >
+            <img
+                 src="https://i.pinimg.com/736x/aa/c4/41/aac44198f331979bf85b2ca2dc2014eb.jpg"
+                 class="img-fluid"
+                 />
+            <a href="#!">
+              <div
+                   class="mask"
+                   style="background-color: rgba(251, 251, 251, 0.15)"
+                   ></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <h4><strong>Цель страницы</strong></h4>
+
+          <p class="text-muted">
+          Эта страница предназначена для отработки ваших навыков и решения дополнительных заданий по различным предметам.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+    <hr class="my-5" />
+
+    <!--Section: Content-->
+    <section class="text-center">
+      <h4 class="mb-5"><strong>Тренажёры</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div
+                 class="bg-image hover-overlay ripple"
+                 data-mdb-ripple-color="light"
+                 >
+              <img
+                   src="https://sun9-57.userapi.com/s/v1/ig2/p3ElZY4va_Y-j0uOL_FjzAOKOVIxq1wOqzgY17N4B18J0J2WRZ0Z_-D1Tdr0bIBg2_ZLsLhhbN3awhu2Hlp4nMuL.jpg?quality=95&as=32x16,48x24,72x36,108x55,160x81,240x121,360x182,480x243,494x250&from=bu&u=CEgCGdHpHXzXP7uAW049k3ewDkal5_qvo7Ieqy-t-S8&cs=494x250"
+                   class="img-fluid"
+                   />
+              <a href="#!">
+                <div
+                     class="mask"
+                     style="background-color: rgba(251, 251, 251, 0.15)"
+                     ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Онлайн-тренажёр "Согласные звонкие и глухие"</h5>
+
+              <a href="https://www.klass39.ru/onlajn-trenazhyor-soglasnye-zvonkie-i-gluxie/" class="btn btn-primary">Тык</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div
+                 class="bg-image hover-overlay ripple"
+                 data-mdb-ripple-color="light"
+                 >
+              <img
+                   src="https://avatars.mds.yandex.net/i?id=fd550e83b1cc8a5173eb5dbb6471b0b9ffbbeba6-10202510-images-thumbs&n=13"
+                   class="img-fluid"
+                   />
+              <a href="#!">
+                <div
+                     class="mask"
+                     style="background-color: rgba(251, 251, 251, 0.15)"
+                     ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Таблица умножения Тренажер</h5>
+
+              <a href="https://best-test.me/Home/Multiplication" class="btn btn-primary">Тык</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div
+                 class="bg-image hover-overlay ripple"
+                 data-mdb-ripple-color="light"
+                 >
+              <img
+                   src="https://cdn.culture.ru/images/1ca11e32-5308-52f5-887a-d7eee46307b8"
+                   class="img-fluid"
+                   />
+              <a href="https://rus2-vpr.sdamgia.ru/">
+                <div
+                     class="mask"
+                     style="background-color: rgba(251, 251, 251, 0.15)"
+                     ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Подготовка к ВПР</h5>
+              <p class="card-text">
+                Здесь вы можете выбрать класс и предмет для подготовки к ВПР.
+              </p>
+              <a href="https://rus2-vpr.sdamgia.ru/" class="btn btn-primary">Тык</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+<!--Main layout-->
+
+<!--Footer-->
+<footer class="bg-light text-lg-start">
+  <div class="py-4 text-center">
+    <a
+       role="button"
+       class="btn btn-primary m-1"
+       href="https://vk.com/mehanizmobivatelia"
+       role="button"
+       rel="nofollow"
+       target="_blank"
+       >
+      Вопросы по сайту
+    </a>
+
+  </div>
+
+  <hr class="m-0" />
+
+
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2025 Copyright:
+    <a class="text-dark" href="https://github.com/Nushany/">GitHub</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--Footer-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
