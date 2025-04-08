@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://shkola28izhevsk-r18.gosweb.gosuslugi.ru/netcat_files/45/253/png_clipart_school_bell_bellflowers_1_september_bell_leaf_backpack.png" type="image/x-icon">
+  <title>Главная страница</title>
+</head>
+
+<body>
+<ul class="nav nav-pills sticky-top bg-white nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">
+      <span style="font-weight: bold;">Главная</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/list/"><span style="font-weight: bold;">Весь список обучалок</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/profile/">
+      <span style="font-weight: bold;">Проведенные опыты</span>
+    </a>
+  </li>
+
+</ul>
+
+<div id="carouselExampleControls" class="carousel slide bg-primary" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://psv4.userapi.com/s/v1/d/Z1EWkIuhdidHmlV7m6jsllfIhmVPSa_BPK5H8Z72Vk_JLR2PUkrcYnI6sQr9j0EDTa8iAVd4V_Z5yaYER9-gw2OHSBrJhgVI_jV4nJ9p0OoBwLYUz8Bm3Q/result_vKc10oi7bFM.jpg" class="mx-auto d-block w-33" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://psv4.userapi.com/s/v1/d/hewtJmVwqPR6jfeKqn8Zlso2vfo1JIRG5N70iNdrwZqv7JgY6zyQhYlPp2Gcqr8L9xKhOqF40Guz5hR8b26W6S0DgTRgUuSbQa5ZWa2hLF_PE4AkmqweLA/result_nov.jpg" class="mx-auto d-block w-33" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://psv4.userapi.com/s/v1/d/eER-4sE7zsDI63VjmiCamoeZ_H3X8R3qzcFC_1TeoFN2j65dYsERr9LxplFSxvKqVF4rek5yrqIXVFOYb9MgmWgYZ-KFxB0Z1y8NuMNsweyJ9lgI8Biwtg/result_novoe.jpg" class="mx-auto d-block w-33" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+<div class="container" style="margin: 50px;">
+  <div class="display-2">
+    <span class="badge bg-primary">Окружающий мир</span>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <ul class="nav nav-tabs bg-white">
+        <a class="nav-link" href="/signup/" tabindex="-1" aria-disabled="true">Регистрация</a>
+      </li>
+    </ul>
+    <form class="row g-3">
+      <div class="col-auto w-50">
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-success mb-3">Найти</button>
+      </div>
+    </form>
+  </div>
+  <div class="col">
+    <div class="card mb-2" style="max-width: 1200px; margin-top: 20px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <a href="/biology/" class="nav-link">
+            <img src="https://avatars.mds.yandex.net/i?id=a7201081d6d22bc9a0407f7883555991_l-5228243-images-thumbs&n=13" class="img-fluid rounded-start" alt="Card title">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="/biology/" class="nav-link"><strong>Видео</strong></a>
+            </h5>
+            <a href="/biology/" class="nav-link">
+              <p class="card-text">
+                Видео обновляются
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-2" style="max-width: 1200px; margin-top: 20px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <a href="/chemistry/" class="nav-link">
+            <img src="https://cs13.pikabu.ru/post_img/2023/02/11/8/og_og_167612238721281779.jpg" class="img-fluid rounded-start" alt="Card title">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="/chemistry/" class="nav-link"><strong>Остальное</strong></a>
+            </h5>
+            <a href="/chemistry/" class="nav-link">
+              <p class="card-text">
+                Здесь содержатся обучающие видео для 1-3 классов и дополнительные опыты с объяснениями
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-2" style="max-width: 1200px; margin-top: 20px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <a href="advertisement.html" class="nav-link">
+            <img src="https://avatars.mds.yandex.net/i?id=fde42236de12ba347245eb0f242eb7fe_l-13016216-images-thumbs&n=13" class="img-fluid rounded-start" alt="Card title">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="/info/" class="nav-link"><strong>Информация</strong></a>
+            </h5>
+            <a href="/info/" class="nav-link">
+              <p class="card-text">
+                Информация о проекте
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer style="padding: 100px;" class="bg-primary">
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="">Оставить отзыв</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="https://vk.com/mehanizmobivatelia" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+             aria-expanded="false">ссылки на социальные сети </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="https://vk.com/mehanizmobivatelia">Вк</a>
+            <a class="dropdown-item" href="https://t.me/Letsgoliveinworld/">Телеграмм</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex my-2 my-lg-0">
+        <input class="form-control me-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
